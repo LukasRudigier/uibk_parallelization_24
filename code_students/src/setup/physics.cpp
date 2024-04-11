@@ -78,17 +78,27 @@ void physics::get_physical_fluxes(const fluid_cell &fluid, fluxes_cell &fluxes, 
 	double e_total = get_e_total(fluid);
 
 	// fluxes.flux_data[fluid.get_index_density()] = fluid_cell.fluid_data[]
-	if (local_direction == parallelisation::direction::x) {
+	if (local_direction == parallelisation::direction::x) {		//done by student
 		fluxes.flux_data[fluid.get_index_density()] = density * v_x;
-		fluxes.flux_data[fluid.get_index_v_x()] = 0.0;    // TBD by students
-		fluxes.flux_data[fluid.get_index_v_y()] = 0.0;    // TBD by students
-		fluxes.flux_data[fluid.get_index_v_z()] = 0.0;    // TBD by students
-		fluxes.flux_data[fluid.get_index_energy()] = 0.0; // TBD by students
+		fluxes.flux_data[fluid.get_index_v_x()] = density * v_x * v_x + pressure;
+		fluxes.flux_data[fluid.get_index_v_y()] = density * v_x * v_y;
+		fluxes.flux_data[fluid.get_index_v_z()] = density * v_x * v_z;
+		fluxes.flux_data[fluid.get_index_energy()] = (e_total + pressure) * v_x;
 		fluxes.flux_data[fluid.get_index_tracer()] = tracer * v_x;
 	} else if (local_direction == parallelisation::direction::y) {
-		// TBD by students
+		fluxes.flux_data[fluid.get_index_density()] = density * v_y;
+		fluxes.flux_data[fluid.get_index_v_x()] = density * v_x * v_y; 
+		fluxes.flux_data[fluid.get_index_v_y()] = density * v_y * v_y + pressure;
+		fluxes.flux_data[fluid.get_index_v_z()] = density * v_y * v_z;
+		fluxes.flux_data[fluid.get_index_energy()] = (e_total + pressure) * v_y;
+		fluxes.flux_data[fluid.get_index_tracer()] = tracer * v_y;
 	} else {
-		// TBD by students
+		fluxes.flux_data[fluid.get_index_density()] = density * v_z;
+		fluxes.flux_data[fluid.get_index_v_x()] = density * v_x * v_z;
+		fluxes.flux_data[fluid.get_index_v_y()] = density * v_y * v_z; 
+		fluxes.flux_data[fluid.get_index_v_z()] = density * v_z * v_z + pressure;
+		fluxes.flux_data[fluid.get_index_energy()] = (e_total + pressure) * v_z;
+		fluxes.flux_data[fluid.get_index_tracer()] = tracer * v_z;
 	}
 }
 

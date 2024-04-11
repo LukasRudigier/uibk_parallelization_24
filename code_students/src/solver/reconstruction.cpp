@@ -24,15 +24,15 @@ void reconstruction::get_derivatives(const fluid &fluid3D, fluid_cell &derivativ
 		double delta_central = (delta_left + delta_right)*0.5;
 
 		// Now, apply the limiter
-		// TBD by students: here you have to pass sensible parameters
-		double derivative = limiter.compute(42.0, 42.0, 42.0);
+		// done by students: here you have to pass sensible parameters
+		double derivative = limiter.compute(delta_left, delta_central, delta_right);
 		derivatives.fluid_data[index_field] = derivative;
 	}
 }
 
-reconsctruction_second_order::reconsctruction_second_order(const fluid &fluid3D) : derivatives(fluid3D.get_fluid_type()) {}
+reconstruction_second_order::reconstruction_second_order(const fluid &fluid3D) : derivatives(fluid3D.get_fluid_type()) {}
 
-void reconsctruction_second_order::compute_point_values(const fluid &fluid3D, fluid_cell &values_left, fluid_cell &values_right,
+void reconstruction_second_order::compute_point_values(const fluid &fluid3D, fluid_cell &values_left, fluid_cell &values_right,
                                                         const parallelisation::direction &local_direction, int index_x, int index_y, int index_z) {
 
 	// Start by computing the derivatives:

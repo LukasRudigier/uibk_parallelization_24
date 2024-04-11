@@ -16,9 +16,9 @@ protected:
 	limiter_minmod limiter;
 };
 
-class reconsctruction_second_order : public reconstruction {
+class reconstruction_second_order : public reconstruction {
 public:
-	reconsctruction_second_order(const fluid &fluid3D);
+	reconstruction_second_order(const fluid &fluid3D);
 	void compute_point_values(const fluid &fluid3D, fluid_cell &values_left, fluid_cell &values_right, const parallelisation::direction &local_direction,
 	                          int index_x, int index_y, int index_z);
 

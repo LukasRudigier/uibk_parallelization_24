@@ -30,7 +30,7 @@ private:
 	double compute_delta_t_next(grid_3D &spatial_grid, fluid &current_fluid);
 	physics fluid_physics;
 	std::unique_ptr<HLL_solver> Riemann;
-	reconsctruction_second_order reconst;
+	reconstruction_second_order reconst;
 	// std::unique_ptr<Riemann_solver> Riemann;
 	fluxes_cell num_flux_left_x, num_flux_right_x, num_flux_left_y, num_flux_right_y;
 	fluxes_cell num_flux_left_z, num_flux_right_z;
