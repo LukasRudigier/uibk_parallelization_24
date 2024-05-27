@@ -6,6 +6,7 @@
 #include <sys/time.h>
 #include <tuple>
 #include <vector>
+#include <mpi.h>
 
 // Include that allows to print result as an image
 // Also, ignore some warnings that pop up when compiling this as C++ mode
@@ -16,8 +17,8 @@
 #include "stb_image_write.h"
 #pragma GCC diagnostic push
 
-constexpr int default_size_x = 1280;
-constexpr int default_size_y = 720;
+constexpr int default_size_x = 1344;
+constexpr int default_size_y = 768;
 
 // RGB image will hold 3 color channels
 constexpr int num_channels = 3;
@@ -65,7 +66,7 @@ auto HSVToRGB(double H, const double S, double V) {
 	return std::make_tuple(R, G, B);
 }
 
-void calcMandelbrot(Image &image, int size_x, int size_y) {
+void calcMandelbrot(Image &image, int size_x, int size_y, int myRank, int numProcs) {
 
 	auto time_start = std::chrono::high_resolution_clock::now();
 	
@@ -81,7 +82,7 @@ void calcMandelbrot(Image &image, int size_x, int size_y) {
 
 	for (int pixel_y = 0; pixel_y < size_y; pixel_y++) {
 		// scale y pixel into mandelbrot coordinate system
-		const float cy = (pixel_y / (float)size_y) * (top - bottom) + bottom;
+		const float cy = (pixel_y / (float)size_y) * (top - bottom)/numProcs + bottom+(top-bottom)*myRank/numProcs;
 		for (int pixel_x = 0; pixel_x < size_x; pixel_x++) {
 			// scale x pixel into mandelbrot coordinate system
 			const float cx = (pixel_x / (float)size_x) * (right - left) + left;
@@ -113,13 +114,15 @@ void calcMandelbrot(Image &image, int size_x, int size_y) {
 	auto time_end = std::chrono::high_resolution_clock::now();
 	auto time_elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(time_end - time_start).count();
 	
-	std::cout << "Mandelbrot set calculation for " << size_x << "x" << size_y << " took: " << time_elapsed << " ms." << std::endl;
+	std::cout << "Mandelbrot set calculation for " << size_x << "x" << size_y << " took: " << time_elapsed << " ms on rank " << myRank << std::endl;
 }
 
 int main(int argc, char **argv) {
 
 	int size_x = default_size_x;
 	int size_y = default_size_y;
+
+	
 
 	if (argc == 3) {
 		size_x = atoi(argv[1]);
@@ -129,12 +132,42 @@ int main(int argc, char **argv) {
 		std::cout << "No arguments given, using default size " << size_x << "x" << size_y << std::endl;
 	}
 
+
+	int myRank, numProcs;
+	MPI_Init(&argc, &argv);
+	MPI_Comm_rank(MPI_COMM_WORLD, &myRank);
+	MPI_Comm_size(MPI_COMM_WORLD, &numProcs);
+
+	if(size_x % numProcs != 0) {
+		MPI_Finalize();
+		return EXIT_FAILURE;
+	}
+
+	std::cout << "My Rank:" << myRank << " Number of Ranks:" << numProcs << std::endl;
+	
 	Image image(num_channels * size_x * size_y);
+	
+	int size_temp = num_channels*size_x*size_y/numProcs;
 
-	calcMandelbrot(image, size_x, size_y);
+	calcMandelbrot(image, size_x, size_y/numProcs, myRank, numProcs);
 
-	constexpr int stride_bytes = 0;
-	stbi_write_png("mandelbrot_seq.png", size_x, size_y, num_channels, image.data(), stride_bytes);
+
+	MPI_Gather(image.data(), size_temp, MPI_UINT8_T, image.data(), size_temp, MPI_UINT8_T, 0, MPI_COMM_WORLD);
+	
+	
+	if(myRank == 0) {
+		constexpr int stride_bytes = 0;
+		stbi_write_png("mandelbrot_mpi.png", size_x, size_y, num_channels, image.data(), stride_bytes);
+	}
+
+	if(myRank == 6) {
+		constexpr int stride_bytes = 0;
+		stbi_write_png("mandelbrot_mpi6.png", size_x, size_y, num_channels, image.data(), stride_bytes);
+	}
+
+	
+	MPI_Finalize();
+	
 
 	return EXIT_SUCCESS;
 }

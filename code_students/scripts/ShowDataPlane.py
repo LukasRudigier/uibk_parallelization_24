@@ -6,7 +6,7 @@ from matplotlib.colors import LogNorm
 import numpy as np
 
 
-path_data = "/put/your/path/here/code/build"
+path_data = "/home/cb76/cb761153/uibk_parallelization_24/code_students/build_release"
 
 
 class plane_type(Enum) :
@@ -88,7 +88,7 @@ class data_plotter() :
         
         plt.pcolormesh(x_left, y_left, data)
         
-        ax.set_aspect('equal')
+        ax.set_aspect('auto')
             
         fig.savefig(output_name)
         
@@ -147,7 +147,7 @@ class data_plotter() :
         ax.azim = 30
         ax.elev = 20
         
-        ax.set_aspect('equal')
+        ax.set_aspect('auto')
         ax.set_box_aspect([1,1,1])
         
         ax.set_xlim([np.min(x_grid), np.max(x_grid)])
