@@ -159,12 +159,6 @@ int main(int argc, char **argv) {
 		constexpr int stride_bytes = 0;
 		stbi_write_png("mandelbrot_mpi.png", size_x, size_y, num_channels, image.data(), stride_bytes);
 	}
-
-	if(myRank == 6) {
-		constexpr int stride_bytes = 0;
-		stbi_write_png("mandelbrot_mpi6.png", size_x, size_y, num_channels, image.data(), stride_bytes);
-	}
-
 	
 	MPI_Finalize();
 	
