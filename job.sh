@@ -15,7 +15,7 @@
 
 # Maximum number of tasks (=processes) to start in total
 
-#SBATCH --ntasks=4
+#SBATCH --ntasks=8
 
 # Maximum number of tasks (=processes) to start per node
 
@@ -29,4 +29,4 @@
 
 module load openmpi/3.1.6-gcc-12.2.0-d2gmn55
 
-mpiexec -n $SLURM_NTASKS ./code_students/build/apps/run_full_code_parallel
+/usr/bin/time -v mpiexec -n $SLURM_NTASKS ./code_parallel/build/apps/run_full_code.parallel

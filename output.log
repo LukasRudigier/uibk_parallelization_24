@@ -1,5 +1,77 @@
-My Rank: 0 Number of Ranks: 4
-My Rank: 2 Number of Ranks: 4
-My Rank: 3 Number of Ranks: 4
-My Rank: 1 Number of Ranks: 4
-slurmstepd-n005: error: Timeout waiting for /sys/fs/cgroup/system.slice/n005_slurmstepd.scope/job_119847/step_batch/slurm/cgroup.events to become empty.
+My Rank: 0 Number of Rank: 4
+ Running in parallel with 4 tasks 
+My Rank: 1 Number of Rank: 4
+My Rank: 2 Number of Rank: 4
+My Rank: 3 Number of Rank: 4
+ Created new tasks 0
+ MPI coordinates for rank 0 -> 0 0 0
+ Constructor
+ axes
+wtf
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Properties of grid 0 -0.5 -0.5 -0.5 0 0 0.5 
+ Constructor
+ axes
+wtf
+ Making linear grid from -0.5 -0.5 with 64 cells
+ Making linear grid from -0.5 -0.5 with 64 cells
+ Making linear grid from -0.5 -0.5 with 64 cells
+Anfang: -0.5 -0.5
+Ende: -0.5-0.5
+ Created new tasks 2
+ MPI coordinates for rank 2 -> 1 0 0
+ Constructor
+ axes
+wtf
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Properties of grid 2 0 -0.5 -0.5 0.5 0 0.5 
+ Constructor
+ axes
+wtf
+ Making linear grid from -0.5 -0.5 with 64 cells
+ Making linear grid from -0.5 -0.5 with 64 cells
+ Making linear grid from -0.5 -0.5 with 64 cells
+Anfang: -0.5 -0.5
+Ende: -0.5-0.5
+ Created new tasks 3
+ MPI coordinates for rank 3 -> 1 1 0
+ Constructor
+ axes
+wtf
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Properties of grid 3 0 0 -0.5 0.5 0.5 0.5 
+ Constructor
+ axes
+wtf
+ Making linear grid from -0.5 -0.5 with 64 cells
+ Making linear grid from -0.5 -0.5 with 64 cells
+ Making linear grid from -0.5 -0.5 with 64 cells
+Anfang: -0.5 -0.5
+Ende: -0.5-0.5
+ Created new tasks 1
+ MPI coordinates for rank 1 -> 0 1 0
+ Constructor
+ axes
+wtf
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Properties of grid 1 -0.5 0 -0.5 0 0.5 0.5 
+ Constructor
+ axes
+wtf
+ Making linear grid from -0.5 -0.5 with 64 cells
+ Making linear grid from -0.5 -0.5 with 64 cells
+ Making linear grid from -0.5 -0.5 with 64 cells
+Anfang: -0.5 -0.5
+Ende: -0.5-0.5
+ Volume of Sedov region: 0 in 0 cells
+ Volume of Sedov region: 0 in 0 cells
+ Volume of Sedov region: 0 in 0 cells
+ Volume of Sedov region: 0 in 0 cells
