@@ -15,11 +15,11 @@
 
 # Maximum number of tasks (=processes) to start in total
 
-#SBATCH --ntasks=8
+#SBATCH --ntasks=16
 
 # Maximum number of tasks (=processes) to start per node
 
-#SBATCH --ntasks-per-node=1
+#SBATCH --ntasks-per-node=4
 
 # Enforce exclusive node allocation, do not share with other jobs
 

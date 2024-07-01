@@ -61,13 +61,13 @@ int main(int argc, char *argv[]) {
 	bound_up[2] = 0.5;
 
 	std::vector<int> num_cells(3);
-	num_cells[0] = 128;
-	num_cells[1] = 128;
-	num_cells[2] = 128;
+	num_cells[0] = 64;
+	num_cells[1] = 64;
+	num_cells[2] = 64;
 
 
 	std::vector<int> tasks(3);
-	tasks[0] = 2;
+	tasks[0] = 16;
 	tasks[1] = 1;
 	tasks[2] = 1;
 

@@ -433,8 +433,8 @@ void finite_volume_solver::apply_boundary_conditions(grid_3D &spatial_grid, flui
 
 
 			// get distination rank
-			dest_rank = parallel_handler.get_back();
-			src_rank = parallel_handler.get_front();
+			dest_rank = parallel_handler.get_top();
+			src_rank = parallel_handler.get_bottom();
 
 			tag_send = 2;
 			tag_recv = 2;
@@ -456,7 +456,7 @@ void finite_volume_solver::apply_boundary_conditions(grid_3D &spatial_grid, flui
 
 
 			// Finally, assign data - either directly or from receive buffer
-			if(parallel_handler.get_front()==MPI_PROC_NULL) {
+			if(parallel_handler.get_bottom()==MPI_PROC_NULL) {
 				for (int ix = 0; ix < spatial_grid.get_num_cells(0); ++ix) {
 					for (int iy = 0; iy < spatial_grid.get_num_cells(1); ++iy) {
 						for (int iz = -1; iz >= -2; --iz) {
@@ -483,8 +483,8 @@ void finite_volume_solver::apply_boundary_conditions(grid_3D &spatial_grid, flui
 			// where necessary, do parallel boundaries
 
 			// get distination rank
-			dest_rank = parallel_handler.get_front();
-			src_rank = parallel_handler.get_back();
+			dest_rank = parallel_handler.get_bottom();
+			src_rank = parallel_handler.get_top();
 
 			tag_send = 3;
 			tag_recv = 3;
@@ -506,7 +506,7 @@ void finite_volume_solver::apply_boundary_conditions(grid_3D &spatial_grid, flui
 
 
 			// Finally, assign data - either directly or from receive buffer
-			if(parallel_handler.get_back()==MPI_PROC_NULL) {
+			if(parallel_handler.get_top()==MPI_PROC_NULL) {
 				for (int ix = 0; ix < spatial_grid.get_num_cells(0); ++ix) {
 					for (int iy = 0; iy < spatial_grid.get_num_cells(1); ++iy) {
 						for (int iz = spatial_grid.get_num_cells(2); iz < spatial_grid.get_num_cells(2)+2; ++iz) {

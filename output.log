@@ -1,8 +1,20 @@
-My Rank: 0 Number of Rank: 4
- Running in parallel with 4 tasks 
-My Rank: 1 Number of Rank: 4
-My Rank: 2 Number of Rank: 4
-My Rank: 3 Number of Rank: 4
+ I am using rank 0 of 16
+ Running in parallel with 16 tasks 
+ I am using rank 1 of 16
+ I am using rank 2 of 16
+ I am using rank 3 of 16
+ I am using rank 6 of 16
+ I am using rank 9 of 16
+ I am using rank 12 of 16
+ I am using rank 13 of 16
+ I am using rank 7 of 16
+ I am using rank 14 of 16
+ I am using rank 15 of 16
+ I am using rank 4 of 16
+ I am using rank 5 of 16
+ I am using rank 8 of 16
+ I am using rank 10 of 16
+ I am using rank 11 of 16
  Created new tasks 0
  MPI coordinates for rank 0 -> 0 0 0
  Constructor
@@ -11,67 +23,845 @@ wtf
  Making linear grid from -0.5 0.5 with 64 cells
  Making linear grid from -0.5 0.5 with 64 cells
  Making linear grid from -0.5 0.5 with 64 cells
- Properties of grid 0 -0.5 -0.5 -0.5 0 0 0.5 
+ Properties of grid 0 -0.5 -0.5 -0.5 -0.4375 0.5 0.5 
  Constructor
  axes
 wtf
- Making linear grid from -0.5 -0.5 with 64 cells
- Making linear grid from -0.5 -0.5 with 64 cells
- Making linear grid from -0.5 -0.5 with 64 cells
-Anfang: -0.5 -0.5
-Ende: -0.5-0.5
- Created new tasks 2
- MPI coordinates for rank 2 -> 1 0 0
- Constructor
- axes
-wtf
+ Making linear grid from -0.5 -0.4375 with 4 cells
  Making linear grid from -0.5 0.5 with 64 cells
- Making linear grid from -0.5 0.5 with 64 cells
- Making linear grid from -0.5 0.5 with 64 cells
- Properties of grid 2 0 -0.5 -0.5 0.5 0 0.5 
- Constructor
- axes
-wtf
- Making linear grid from -0.5 -0.5 with 64 cells
- Making linear grid from -0.5 -0.5 with 64 cells
- Making linear grid from -0.5 -0.5 with 64 cells
-Anfang: -0.5 -0.5
-Ende: -0.5-0.5
- Created new tasks 3
- MPI coordinates for rank 3 -> 1 1 0
- Constructor
- axes
-wtf
- Making linear grid from -0.5 0.5 with 64 cells
- Making linear grid from -0.5 0.5 with 64 cells
- Making linear grid from -0.5 0.5 with 64 cells
- Properties of grid 3 0 0 -0.5 0.5 0.5 0.5 
- Constructor
- axes
-wtf
- Making linear grid from -0.5 -0.5 with 64 cells
- Making linear grid from -0.5 -0.5 with 64 cells
- Making linear grid from -0.5 -0.5 with 64 cells
-Anfang: -0.5 -0.5
-Ende: -0.5-0.5
  Created new tasks 1
- MPI coordinates for rank 1 -> 0 1 0
+ MPI coordinates for rank 1 -> 1 0 0
  Constructor
  axes
 wtf
  Making linear grid from -0.5 0.5 with 64 cells
  Making linear grid from -0.5 0.5 with 64 cells
  Making linear grid from -0.5 0.5 with 64 cells
- Properties of grid 1 -0.5 0 -0.5 0 0.5 0.5 
+ Properties of grid 1 -0.4375 -0.5 -0.5 -0.375 0.5 0.5 
  Constructor
  axes
 wtf
- Making linear grid from -0.5 -0.5 with 64 cells
- Making linear grid from -0.5 -0.5 with 64 cells
- Making linear grid from -0.5 -0.5 with 64 cells
-Anfang: -0.5 -0.5
-Ende: -0.5-0.5
- Volume of Sedov region: 0 in 0 cells
- Volume of Sedov region: 0 in 0 cells
- Volume of Sedov region: 0 in 0 cells
- Volume of Sedov region: 0 in 0 cells
+ Making linear grid from -0.4375 -0.375 with 4 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Created new tasks 2
+ MPI coordinates for rank 2 -> 2 0 0
+ Constructor
+ axes
+wtf
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Properties of grid 2 -0.375 -0.5 -0.5 -0.3125 0.5 0.5 
+ Constructor
+ axes
+wtf
+ Making linear grid from -0.375 -0.3125 with 4 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Created new tasks 3
+ MPI coordinates for rank 3 -> 3 0 0
+ Constructor
+ axes
+wtf
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Properties of grid 3 -0.3125 -0.5 -0.5 -0.25 0.5 0.5 
+ Constructor
+ axes
+wtf
+ Anfang: -0.367188 -0.375
+ Ende: -0.320312 -0.3125
+ Making linear grid from -0.5 0.5 with 64 cells
+ Anfang: -0.492188 -0.5
+ Ende: -0.445312 -0.4375
+ Anfang: -0.429688 -0.4375
+ Ende: -0.382812 -0.375
+ Making linear grid from -0.3125 -0.25 with 4 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Anfang: -0.304688 -0.3125
+ Ende: -0.257812 -0.25
+ Created new tasks 7
+ MPI coordinates for rank 7 -> 7 0 0
+ Constructor
+ axes
+wtf
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Created new tasks 4
+ MPI coordinates for rank 4 -> 4 0 0
+ Constructor
+ axes
+wtf
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Created new tasks 9
+ MPI coordinates for rank 9 -> 9 0 0
+ Constructor
+ axes
+wtf
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Properties of grid 9 0.0625 -0.5 -0.5 0.125 0.5 0.5 
+ Constructor
+ axes
+wtf
+ Making linear grid from 0.0625 0.125 with 4 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Created new tasks 12
+ MPI coordinates for rank 12 -> 12 0 0
+ Constructor
+ axes
+wtf
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Properties of grid 12 0.25 -0.5 -0.5 0.3125 0.5 0.5 
+ Constructor
+ axes
+wtf
+ Making linear grid from 0.25 0.3125 with 4 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Created new tasks 6
+ MPI coordinates for rank 6 -> 6 0 0
+ Constructor
+ axes
+wtf
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Created new tasks 8
+ MPI coordinates for rank 8 -> 8 0 0
+ Constructor
+ axes
+wtf
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Properties of grid 8 0 -0.5 -0.5 0.0625 0.5 0.5 
+ Constructor
+ axes
+wtf
+ Making linear grid from 0 0.0625 with 4 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Anfang: 0.0078125 0
+ Ende: 0.0546875 0.0625
+ Created new tasks 13
+ MPI coordinates for rank 13 -> 13 0 0
+ Constructor
+ axes
+wtf
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Properties of grid 13 0.3125 -0.5 -0.5 0.375 0.5 0.5 
+ Created new tasks 5
+ MPI coordinates for rank 5 -> 5 0 0
+ Constructor
+ axes
+wtf
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Properties of grid 5 -0.1875 -0.5 -0.5 -0.125 0.5 0.5 
+ Created new tasks 10
+ MPI coordinates for rank 10 -> 10 0 0
+ Constructor
+ axes
+wtf
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Properties of grid 10 0.125 -0.5 -0.5 0.1875 0.5 0.5 
+ Constructor
+ axes
+wtf
+ Making linear grid from 0.125 0.1875 with 4 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Anfang: 0.132812 0.125
+ Ende: 0.179688 0.1875
+ Created new tasks 14
+ MPI coordinates for rank 14 -> 14 0 0
+ Constructor
+ axes
+wtf
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Properties of grid 14 0.375 -0.5 -0.5 0.4375 0.5 0.5 
+ Constructor
+ axes
+wtf
+ Making linear grid from 0.375 0.4375 with 4 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Properties of grid 6 -0.125 -0.5 -0.5 -0.0625 0.5 0.5 
+ Constructor
+ axes
+wtf
+ Making linear grid from -0.125 -0.0625 with 4 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Anfang: -0.117188 -0.125
+ Ende: -0.0703125 -0.0625
+ Created new tasks 11
+ MPI coordinates for rank 11 -> 11 0 0
+ Constructor
+ axes
+wtf
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Properties of grid 11 0.1875 -0.5 -0.5 0.25 0.5 0.5 
+ Constructor
+ axes
+wtf
+ Making linear grid from 0.1875 0.25 with 4 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Anfang: 0.195312 0.1875
+ Ende: 0.242188 0.25
+ Properties of grid 7 -0.0625 -0.5 -0.5 0 0.5 0.5 
+ Constructor
+ axes
+wtf
+ Making linear grid from -0.0625 0 with 4 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Anfang: -0.0546875 -0.0625
+ Ende: -0.0078125 0
+ Anfang: 0.0703125 0.0625
+ Ende: 0.117188 0.125
+ Created new tasks 15
+ MPI coordinates for rank 15 -> 15 0 0
+ Constructor
+ axes
+wtf
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Properties of grid 15 0.4375 -0.5 -0.5 0.5 0.5 0.5 
+ Constructor
+ axes
+wtf
+ Making linear grid from 0.4375 0.5 with 4 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Properties of grid 4 -0.25 -0.5 -0.5 -0.1875 0.5 0.5 
+ Constructor
+ axes
+wtf
+ Making linear grid from -0.25 -0.1875 with 4 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Anfang: -0.242188 -0.25
+ Ende: -0.195312 -0.1875
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Anfang: 0.382812 0.375
+ Ende: 0.429688 0.4375
+ Constructor
+ axes
+wtf
+ Making linear grid from -0.1875 -0.125 with 4 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Anfang: 0.257812 0.25
+ Ende: 0.304688 0.3125
+ Anfang: -0.179688 -0.1875
+ Ende: -0.132812 -0.125
+ Constructor
+ axes
+wtf
+ Making linear grid from 0.3125 0.375 with 4 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Making linear grid from -0.5 0.5 with 64 cells
+ Anfang: 0.320312 0.3125
+ Ende: 0.367188 0.375
+ Making linear grid from -0.5 0.5 with 64 cells
+ Anfang: 0.445312 0.4375
+ Ende: 0.492188 0.5
+ resizing field 0:
+ resizing field 0:
+ Volume of Sedov region: 0.00415039 in 1088 cells
+ resizing field 0:
+ resizing field 0:
+ resizing field 0:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 1:
+ resizing field 0:
+ resizing field 0:
+ resizing field 0:
+ resizing field 0:
+ resizing field 0:
+ resizing field 0:
+ -> 36992
+ resizing field 1:
+ resizing field 0:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 1:
+ resizing field 0:
+ resizing field 0:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 1:
+ resizing field 0:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 3:
+ resizing field 0:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ -> 36992
+ -> 36992
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ -> 36992
+ -> 36992
+ resizing field 5:
+ -> 36992
+ -> 36992
+ -> 36992
+ -> 36992
+ -> 36992
+ -> 36992
+ -> 36992
+ -> 36992
+ -> 36992
+ resizing field 0:
+ resizing field 0:
+ resizing field 0:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 1:
+ resizing field 0:
+ resizing field 0:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 0:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 0:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 0:
+ -> 36992
+ resizing field 1:
+ resizing field 0:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 0:
+ -> 36992
+ resizing field 0:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 3:
+ resizing field 0:
+ -> 36992
+ resizing field 2:
+ resizing field 0:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 3:
+ resizing field 0:
+ resizing field 0:
+ resizing field 0:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 5:
+ resizing field 0:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 1:
+ resizing field 0:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 1:
+ resizing field 0:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 1:
+ resizing field 0:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 0:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ -> 36992
+ -> 36992
+ resizing field 3:
+ -> 36992
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 2:
+ resizing field 0:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 0:
+ -> 36992
+ resizing field 0:
+ -> 36992
+ resizing field 0:
+ -> 36992
+ resizing field 0:
+ -> 36992
+ resizing field 0:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 0:
+ -> 36992
+ resizing field 0:
+ -> 36992
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 1:
+ resizing field 0:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 2:
+ resizing field 0:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 3:
+ resizing field 0:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 1:
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 2:
+ -> 36992
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ -> 36992
+ -> 36992
+ resizing field 3:
+ -> 36992
+ -> 36992
+ -> 36992
+ -> 36992
+ -> 36992
+ resizing field 3:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ resizing field 4:
+ -> 36992
+ -> 36992
+ resizing field 5:
+ -> 36992
+ resizing field 5:
+ -> 36992
+ -> 36992
+slurmstepd-n002: error: *** JOB 123331 ON n002 CANCELLED AT 2024-06-27T14:19:31 ***
